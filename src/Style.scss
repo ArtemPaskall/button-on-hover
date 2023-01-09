@@ -1,0 +1,55 @@
+.button-hover {
+ position: fixed;
+ right: 30px;
+ top: 30px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ color: rgb(130, 127, 127);
+ font-weight: 500;
+}
+
+.current-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(234, 211, 211);
+  border-radius: 50%;
+  margin: 20px 20px 20px 0;
+  cursor: pointer;
+  order: 2;
+}
+
+.current-value-span {
+}
+
+.values-list {
+  display: flex;
+  flex-direction: row;
+  visibility: hidden;
+  order: 1;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.values-list-item {
+  padding: 10px 0 10px 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.values-list-item:hover {
+  color: rgb(53, 52, 52);
+}
+
+.values-list-item:last-child {
+  padding: 10px;
+}
+
+.button-hover:hover .values-list {
+  opacity: 1;
+  visibility: visible;
+}
