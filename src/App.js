@@ -7,12 +7,12 @@ register(ButtonsOnHover, 'buttons-on-hover', React, ReactDOM);
 
 function App() {
   return (
-      <buttons-on-hover 
-        change-attribute="lang" 
-        change-tag="zero-md"  
-        values-per-button="en,ua,ru" 
-        default="en"
-      />
+    <buttons-on-hover 
+      change-attribute="lang" 
+      change-tag="zero-md"  
+      values-per-button="en,ua,ru" 
+      default="ua"
+    />
   );
 }
 
